@@ -16,8 +16,8 @@ importers:
 
   packages/all:
     specifiers:
-      '@antfu/eslint-config-react': ^0.16.1
-      '@antfu/eslint-config-vue': ^0.16.1
+      '@trouni/eslint-config-react': ^0.16.2
+      '@trouni/eslint-config-vue': ^0.16.2
       '@typescript-eslint/eslint-plugin': ^5.10.1
       '@typescript-eslint/parser': ^5.10.1
       eslint: ^8.7.0
@@ -34,8 +34,8 @@ importers:
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^0.5.0
     dependencies:
-      '@antfu/eslint-config-react': 0.16.1_eslint@8.7.0+typescript@4.5.5
-      '@antfu/eslint-config-vue': 0.16.1_eslint@8.7.0+typescript@4.5.5
+      '@trouni/eslint-config-react': link:../react
+      '@trouni/eslint-config-vue': link:../vue
       '@typescript-eslint/eslint-plugin': 5.10.1_0f442f6b60390429061d5d9b6bcaaba6
       '@typescript-eslint/parser': 5.10.1_eslint@8.7.0+typescript@4.5.5
       eslint-config-standard: 17.0.0-0_3163ab7e7910c30880bb01ebc541ca1a
@@ -84,13 +84,13 @@ importers:
 
   packages/react:
     specifiers:
-      '@antfu/eslint-config-ts': ^0.16.1
+      '@trouni/eslint-config-ts': ^0.16.2
       eslint: ^8.7.0
       eslint-plugin-react: ^7.28.0
       react: ^17.0.2
       typescript: ^4.5.5
     dependencies:
-      '@antfu/eslint-config-ts': 0.16.1_eslint@8.7.0+typescript@4.5.5
+      '@trouni/eslint-config-ts': link:../typescript
       eslint-plugin-react: 7.28.0_eslint@8.7.0
     devDependencies:
       eslint: 8.7.0
@@ -99,12 +99,12 @@ importers:
 
   packages/typescript:
     specifiers:
-      '@antfu/eslint-config-basic': ^0.16.1
+      '@trouni/eslint-config-basic': ^0.16.2
       '@typescript-eslint/eslint-plugin': ^5.10.1
       '@typescript-eslint/parser': ^5.10.1
       eslint: ^8.7.0
     dependencies:
-      '@antfu/eslint-config-basic': 0.16.1_eslint@8.7.0
+      '@trouni/eslint-config-basic': link:../basic
       '@typescript-eslint/eslint-plugin': 5.10.1_0f442f6b60390429061d5d9b6bcaaba6
       '@typescript-eslint/parser': 5.10.1_eslint@8.7.0+typescript@4.5.5
     devDependencies:
@@ -112,78 +112,16 @@ importers:
 
   packages/vue:
     specifiers:
-      '@antfu/eslint-config-ts': ^0.16.1
+      '@trouni/eslint-config-ts': ^0.16.2
       eslint: ^8.7.0
       eslint-plugin-vue: ^8.4.0
     dependencies:
-      '@antfu/eslint-config-ts': 0.16.1_eslint@8.7.0+typescript@4.5.5
+      '@trouni/eslint-config-ts': link:../typescript
       eslint-plugin-vue: 8.4.0_eslint@8.7.0
     devDependencies:
       eslint: 8.7.0
 
 packages:
-
-  /@antfu/eslint-config-basic/0.16.1_eslint@8.7.0:
-    resolution: {integrity: sha512-kUA7UBD1W8FG2frH4pKfos4l5eUSxVH8oMK7+T9OxBAxpvXDAYUGU0KNZoMOdhWhu0dmE/7iHXYbnu6r9KXwUw==}
-    peerDependencies:
-      eslint: '>=7.4.0'
-    dependencies:
-      eslint: 8.7.0
-      eslint-config-standard: 17.0.0-0_3163ab7e7910c30880bb01ebc541ca1a
-      eslint-plugin-eslint-comments: 3.2.0_eslint@8.7.0
-      eslint-plugin-html: 6.2.0
-      eslint-plugin-import: 2.25.4_eslint@8.7.0
-      eslint-plugin-jsonc: 2.0.0_eslint@8.7.0
-      eslint-plugin-n: 14.0.0_eslint@8.7.0
-      eslint-plugin-promise: 6.0.0_eslint@8.7.0
-      eslint-plugin-unicorn: 40.1.0_eslint@8.7.0
-      eslint-plugin-yml: 0.12.0_eslint@8.7.0
-      jsonc-eslint-parser: 2.1.0
-      yaml-eslint-parser: 0.5.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
-  /@antfu/eslint-config-react/0.16.1_eslint@8.7.0+typescript@4.5.5:
-    resolution: {integrity: sha512-UU/KqDVRb6/XQVBsrL2a3fBwn2NRGWnZCBPAU9HbIqLY/zJ5p8CpBJTvvIvCC4p4aiO3unwnYhhf5SdCQtfOjw==}
-    peerDependencies:
-      eslint: '>=7.4.0'
-    dependencies:
-      '@antfu/eslint-config-ts': 0.16.1_eslint@8.7.0+typescript@4.5.5
-      eslint: 8.7.0
-      eslint-plugin-react: 7.28.0_eslint@8.7.0
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: false
-
-  /@antfu/eslint-config-ts/0.16.1_eslint@8.7.0+typescript@4.5.5:
-    resolution: {integrity: sha512-FrIosrYILXog7v8GcQkj8YyMKe6HxUvv8DFDHxQjR5liI77BQ9kmIqRu8JZ/6RwMEEpMWV5Ed+LDR7FDjJiTxg==}
-    peerDependencies:
-      eslint: '>=7.4.0'
-      typescript: '>=3.9'
-    dependencies:
-      '@antfu/eslint-config-basic': 0.16.1_eslint@8.7.0
-      '@typescript-eslint/eslint-plugin': 5.10.1_0f442f6b60390429061d5d9b6bcaaba6
-      '@typescript-eslint/parser': 5.10.1_eslint@8.7.0+typescript@4.5.5
-      eslint: 8.7.0
-      typescript: 4.5.5
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
-  /@antfu/eslint-config-vue/0.16.1_eslint@8.7.0+typescript@4.5.5:
-    resolution: {integrity: sha512-2BMQBTVQrElu2Pvmubgc1G3BrCbaQjBzcepZZvHNnK74Wq4ec1Cl5i9BMRVVwBGg5fIg5erRPzUWr17j5BLa0A==}
-    peerDependencies:
-      eslint: '>=7.4.0'
-    dependencies:
-      '@antfu/eslint-config-ts': 0.16.1_eslint@8.7.0+typescript@4.5.5
-      eslint: 8.7.0
-      eslint-plugin-vue: 8.4.0_eslint@8.7.0
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: false
 
   /@babel/code-frame/7.12.13:
     resolution: {integrity: sha512-HV1Cm0Q3ZrpCR93tkWOYiuYIgLxZXZFVG2VgK+MBWjUqZTundupbfx2aXarXuw5Ko5aMcjtJgbSs4vUGBS5v6g==}

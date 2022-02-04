@@ -1,6 +1,6 @@
 {
   "name": "@trouni/eslint-config-ts",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "description": "",
   "keywords": [],
   "license": "MIT",
@@ -24,7 +24,7 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@trouni/eslint-config-basic": "^0.16.1",
+    "@trouni/eslint-config-basic": "^0.16.2",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1"
   },
