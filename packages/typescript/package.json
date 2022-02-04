@@ -1,10 +1,17 @@
 {
-  "name": "@antfu/eslint-config-ts",
+  "name": "@trouni/eslint-config-ts",
   "version": "0.16.1",
   "description": "",
   "keywords": [],
   "license": "MIT",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "author": "Trouni Tiet <trouni@gmail.com> (https://github.com/trouni/)",
+  "contributors": [
+    {
+      "name": "Anthony Fu",
+      "email": "anthonyfu117@hotmail.com",
+      "url": "https://github.com/antfu/"
+    }
+  ],
   "files": [
     "index.js"
   ],
