@@ -23,7 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@antfu/eslint-config-ts": "^0.16.1",
+    "@trouni/eslint-config-ts": "^0.16.1",
     "eslint-plugin-vue": "^8.4.0"
   },
   "devDependencies": {
