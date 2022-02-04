@@ -1,6 +1,6 @@
 {
   "name": "@trouni/eslint-config-vue",
-  "version": "0.16.1",
+  "version": "0.16.2",
   "description": "",
   "keywords": [],
   "license": "MIT",
@@ -23,7 +23,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@trouni/eslint-config-ts": "^0.16.1",
+    "@trouni/eslint-config-ts": "^0.16.2",
     "eslint-plugin-vue": "^8.4.0"
   },
   "devDependencies": {
